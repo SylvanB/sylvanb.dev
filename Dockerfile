@@ -1,7 +1,7 @@
 FROM klakegg/hugo:ext-alpine AS builder
 
 # Base URL
-ARG HUGO_BASEURL=sylvanb.dev
+ARG HUGO_BASEURL=https://sylvanb.dev
 ENV HUGO_BASEURL=${HUGO_BASEURL}
 # Build site
 COPY . /src

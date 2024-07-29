@@ -13,8 +13,6 @@ RUN rm -rf /usr/share/nginx/html/*
 COPY --from=builder /app/public /usr/share/nginx/html
 COPY --from=builder /app/nginx.conf /etc/nginx/nginx.conf
 
-RUN ls -l /usr/share/nginx/html
-
-EXPOSE 80
+EXPOSE 8043
 
 CMD ["nginx", "-g", "daemon off;"]

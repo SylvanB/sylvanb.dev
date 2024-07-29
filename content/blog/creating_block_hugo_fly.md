@@ -1,7 +1,7 @@
 +++
 title = "Creating a Blog with Hugo & Fly.io"
 date = "2024-07-24T14:25:04+01:00"
-
+draft = true
 #
 # description is optional
 #

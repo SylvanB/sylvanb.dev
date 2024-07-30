@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN hugo
+RUN hugo --minify --gc --enableGitInfo
 
 FROM nginx:alpine
 

@@ -1,7 +1,7 @@
 baseURL = 'https://sylvanb.dev/'
 languageCode = 'en-us'
 title = 'goldsoulsylvan'
-theme = 'hugo-bearblog'
+theme = 'hugo-bearblog-sylvanb'
 
 author = "goldsoulsylvan"
 copyright = "Copyright © 2020, Sylvan B."
@@ -16,6 +16,14 @@ ignoreErrors = ["error-disable-taxonomy"]
 [permalinks]
 blog = "/:slug/"
 tags = "/blog/:slug"
+
+[markup]
+[markup.goldmark]
+[markup.goldmark.extensions]
+[markup.goldmark.extensions.passthrough]
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['@@', '@@']]
+inline = [['@', '@']]
 
 
 [params]
@@ -46,3 +54,8 @@ hideMadeWithLine = true
 # for details. An example TOML config that uses [ISO
 # 8601](https://en.wikipedia.org/wiki/ISO_8601) format:
 # dateFormat = "2006-01-02"
+
+# Mermaid
+[mermaid]
+# theme = "light"
+align = "center"

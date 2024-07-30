@@ -13,6 +13,8 @@ Thats really it, the below diagram shows this all:
 
 ![Architecture Diagram of sylvanb.dev](/images/sylvanb-dev-architecture.png)
 
+*A diagram of the architecture of sylvanb.dev*
+
 Most of it is handwaved away by the magic that is [Fly.io](https://fly.io) and [Cloudflare](https://www.cloudflare.com), and lets
 me focus on the main aim of this site - letting me talk my shit unimpeded 😎.
 

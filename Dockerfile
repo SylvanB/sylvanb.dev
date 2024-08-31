@@ -4,8 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN hugo --minify --gc --enableGitInfo
-
+RUN hugo
 FROM nginx:alpine
 
 RUN rm -rf /usr/share/nginx/html/*
